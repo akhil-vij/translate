@@ -1,0 +1,15 @@
+.app-container {
+    width: 32vw;
+    height: 50vh;
+    margin: 0px auto;
+    border: 1px solid lightgray;
+}
+.active {
+    background-color: #1dd2d4;
+}
+.app-wrapper {
+    height: calc(100% - 50px);
+    box-sizing: border-box;
+    padding: 20px;
+}
+

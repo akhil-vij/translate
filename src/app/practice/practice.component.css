@@ -1,0 +1,17 @@
+md-input-container {
+    width: 100%;
+}
+.margin-top {
+    margin-top: 20px;
+}
+.margin-bottom {
+    margin-bottom: 20px;
+}
+.favorite {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+}
+.favorite.active {
+    background-color: #77e4e5;
+}

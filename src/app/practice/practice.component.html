@@ -1,0 +1,13 @@
+<md-input-container class="full-width">
+  <input md-input placeholder="Enter English" type="text" [(ngModel)]="english">
+</md-input-container>
+
+<a md-raised-button class="margin-top margin-bottom" (click)="onClick()">Translate</a>
+
+<md-input-container class="full-width">
+  <input md-input placeholder="Get Spanish" type="text" [(ngModel)]="spanish" #inp>
+</md-input-container>
+
+<a md-raised-button class="favorite" (click)="onAdd()" [class.active]="spanish">Add to Favorite</a>
+
+

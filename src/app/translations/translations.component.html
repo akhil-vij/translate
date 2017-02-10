@@ -1,0 +1,10 @@
+<div class="translation-container">
+  <div class="flex-wrapper">
+    <div class="empty" *ngIf="!translations.length">Please Practice and Add to Favorites</div>
+    <div class="flex-item" *ngFor="let item of translations; let i = index; ">
+        <div class="flex-inner-heading">{{i+1}})</div>
+        <div class="flex-inner">{{item.english}}</div>
+        <div class="flex-inner">{{item.spanish}}</div>
+    </div>
+  </div>
+</div>
