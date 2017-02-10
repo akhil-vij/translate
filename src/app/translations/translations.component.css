@@ -5,17 +5,15 @@
     background-color: #77e4e5;
     border-radius: 5px;
     margin-bottom: 5px;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .flex-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-.flex-item {
-    flex-basis: 100%;
-    display: flex;
     justify-content: space-around;
     align-items: center;
 }

@@ -13,8 +13,8 @@ export class TranslationsComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    // Always get the data and do heavy loading stuff in the on init hook rather than the constructor
     this.translations = this.dataService.getAllTranslations();
-    console.log(this.translations);
   }
 
 }

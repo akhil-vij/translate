@@ -1,0 +1,15 @@
+<div class="empty" *ngIf="!translations.length">Please Practice and Add to Favorites</div>
+<div *ngIf="translations.length">
+  <div class="query"> {{currentTranslation.english}}</div>
+
+  <br>
+  <md-input-container class="full-width">
+    <input md-input placeholder="Enter Spanish" type="text" [(ngModel)]="answer">
+  </md-input-container>
+  <br>
+
+  <a md-raised-button class="result-btn" (click)="onAnswer()">See Result</a>
+  <br>
+  <div class="correct" *ngIf="submitted && correct"> Your answer is correct</div>
+  <div class="wrong" *ngIf="submitted && !correct"> Incorrect. The correct translation was : {{currentTranslation.spanish}}</div>
+</div>

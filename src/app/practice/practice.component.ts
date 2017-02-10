@@ -23,9 +23,9 @@ export class PracticeComponent implements OnInit {
   }
   onAdd() {
     // Do nothing if user has already favorited this english word
-    if (localStorage.getItem(this.english) !== null) {
+    /*if (localStorage.getItem(this.english) !== null) {
       return;
-    }
+    }*/
     // Store the word with the spanish translation in the browser localStorage
     localStorage.setItem(this.english, this.spanish);
     // Update the Favorite service

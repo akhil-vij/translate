@@ -12,13 +12,15 @@ import { AboutComponent } from './about/about.component';
 
 import { TranslateService } from './services/translate.service';
 import { DataService } from './services/data.service';
+import { QuizComponent } from './quiz/quiz.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PracticeComponent,
     TranslationsComponent,
-    AboutComponent
+    AboutComponent,
+    QuizComponent
   ],
   imports: [
     BrowserModule,

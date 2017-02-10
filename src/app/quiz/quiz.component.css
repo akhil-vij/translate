@@ -1,0 +1,29 @@
+md-input-container {
+    width: 100%;
+}
+.result-btn {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+}
+.empty {
+    text-align: center;
+}
+.query, .correct, .wrong {
+    display: flex;
+    width: 95%;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid lightgrey;
+    background-color: #f8ffff;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    justify-content: center;
+}
+.correct {
+    background-color: #5fba7d;
+}
+.wrong {
+    background-color: #e13137;
+}

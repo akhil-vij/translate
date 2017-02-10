@@ -3,14 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { PracticeComponent } from './practice/practice.component';
 import { TranslationsComponent } from './translations/translations.component';
-import { AboutComponent } from './about/about.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 const appRoutes: Routes = [
     { path: 'practice', component: PracticeComponent},
     { path: 'translations', component: TranslationsComponent},
-    { path: 'about', component: AboutComponent},
-    { path: '', redirectTo: '/practice', pathMatch: 'full'},
-    { path: '**', component: PracticeComponent}
+    { path: 'quiz', component: QuizComponent},
+    { path: '', redirectTo: '/practice', pathMatch: 'full'}, // Default/home should be practice, need to match full else all paths match
+    { path: '**', component: PracticeComponent} // Any unknown path, just redirect to practice
 ];
 
 @NgModule({
